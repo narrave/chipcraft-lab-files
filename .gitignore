@@ -4,6 +4,10 @@
 # Encrypted Verilog files ARE tracked
 !*.v.enc
 
+# Student-created files in mywork/ are allowed as plain .v
+!mywork/
+!mywork/*.v
+
 # Simulation outputs — generated locally, not committed
 *.vcd
 *.vvp
