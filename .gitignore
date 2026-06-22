@@ -1,14 +1,14 @@
-# Block everything — only .enc files and README may be committed
+# Block everything by default — only .enc files may be committed
 *
 
 # Allow repo infrastructure
 !.gitignore
-!Makefile
-
-# The only data files allowed are encrypted Verilog
-!*.enc
-
-# Allow README files (mywork/README.md)
 !README.md
-!mywork/
-!mywork/README.md
+
+# Allow all folders and subfolders (so git looks inside them)
+!*/
+!**/*/
+
+# Allow encrypted files anywhere in any subfolder
+!*.enc
+!**/*.enc
