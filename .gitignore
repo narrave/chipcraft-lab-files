@@ -3,6 +3,7 @@
 
 # Allow repo infrastructure
 !.gitignore
+!.gitattributes
 !README.md
 
 # Allow all folders and subfolders (so git looks inside them)
